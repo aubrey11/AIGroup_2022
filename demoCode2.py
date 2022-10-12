@@ -36,12 +36,12 @@ class Queue:
             return False
 
 class Maze:
-    def __init__(self, filename):
+    def __init__(self, maze.txt):
         # read file + initialize matrix
         self.matrix = []
         self.dim_x = 0
         self.dim_y = 0
-        self.readfile(filename)
+        self.readfile(maze.txt)
 
     def print(self):
         print("Dims: ", self.dim_y, self.dim_x)
